@@ -116,6 +116,7 @@ frappe.ui.form.on("Supplier", {
 
 	supplier_primary_contact: function(frm) {
 		if (!frm.doc.supplier_primary_contact) {
+			frm.set_value("title_or_position", "");
 			frm.set_value("mobile_no", "");
 			frm.set_value("email_id", "");
 		}
